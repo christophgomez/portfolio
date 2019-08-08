@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaintBrush } from '@fortawesome/free-solid-svg-icons';
 import { toElement as scrollToElement } from '../../util/scroll';

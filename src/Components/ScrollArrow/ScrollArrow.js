@@ -1,8 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { toElement as scrollToElement } from '../../util/scroll';
-import './styles.css';
+import './styles.scss';
 
 export default class ScrollArrow extends React.Component {
   scrollToNext() {
@@ -22,7 +22,7 @@ export default class ScrollArrow extends React.Component {
             </div>
           }
           
-          <FontAwesomeIcon style={{ color: 'var(--text-color)' }} icon={faChevronDown} size='2x' />
+          {this.props.prev ? <FontAwesomeIcon style={{ color: 'var(--text-color)' }} icon={faChevronUp} size='2x' /> : <FontAwesomeIcon style={{ color: 'var(--text-color)' }} icon={faChevronDown} size='2x' />}
         </div>
       </div>
     );

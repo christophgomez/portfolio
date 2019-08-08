@@ -2,36 +2,41 @@
   0% {
     color: var(--text-color);
   }
+
   4% {
     color: #f5871f;
   }
+
   8% {
     color: #1edf3e;
   }
+
   12% {
     color: #3833ed;
   }
+
   16% {
     color: #ed33cf;
   }
+
   20% {
     color: #7f33ed;
   }
+
   24% {
     color: var(--text-color);
   }
 }
+
 
 .glowing-text span {
   text-align: center;
   min-width: 5px;
   height: 100%;
   display: inline-block;
-}
-.glowing-text span:nth-child(n) {
-  animation-delay: calc(--anim-delay + (100*n));
-}
-.glowing-text span {
+  &:nth-child(n) {
+    animation-delay: calc(--anim-delay + (100*n));
+  }
   animation: highlight 8s;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;

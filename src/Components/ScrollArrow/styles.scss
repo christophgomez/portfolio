@@ -1,19 +1,19 @@
 .scroll {
   cursor: pointer;
-}
-.scroll .arrow {
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 0.5rem;
-}
-.scroll .arrow .scroll-text {
-  text-align: center;
-  font-size: 0.5rem;
-  margin-bottom: -0.125rem;
-}
-.scroll .bounce {
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  .arrow {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    .scroll-text {
+      text-align: center;
+      font-size: 0.5rem;
+      margin-bottom: -0.125rem;
+    }
+  }
+  .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
 }
 
 @-webkit-keyframes bounce {
@@ -25,15 +25,18 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
+
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
 }
+
 
 @keyframes bounce {
   0%,
@@ -44,10 +47,12 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
+
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);

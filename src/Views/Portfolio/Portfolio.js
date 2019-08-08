@@ -1,7 +1,8 @@
 import React from 'react';
-import './styles.css';
+import './styles.scss';
 import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 import PortfolioItem from '../../Components/PortfolioItem/PortfolioItem';
+import PortfolioItems from './PortfolioItems';
 
 export default class Portfolio extends React.Component {
   render() {
@@ -10,10 +11,12 @@ export default class Portfolio extends React.Component {
         <div className="content-grid">
           <h1>Portfolio</h1>
           <div className="portfolio-wrapper">
-            <PortfolioItem/>
+            {PortfolioItems.map((item) => {
+              return <PortfolioItem item={item}/>
+            })}
           </div>
         </div>
-        <ScrollArrow to=".about" />
+        <ScrollArrow prev={true} to=".about" />
       </div>
     )
   }

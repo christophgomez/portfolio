@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
-import './styles.css';
+import './styles.scss';
 import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 import GlowingText from '../../Components/GlowingText/GlowingText';
 
