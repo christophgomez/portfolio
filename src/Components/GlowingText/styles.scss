@@ -34,9 +34,6 @@
   min-width: 5px;
   height: 100%;
   display: inline-block;
-  &:nth-child(n) {
-    animation-delay: calc(--anim-delay + (100*n));
-  }
   animation: highlight 8s;
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;

@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.scss';
 import ScrollArrow from '../../Components/ScrollArrow/ScrollArrow';
 import Slideshow from '../../Components/Slideshow/Slideshow';
+import resume from '../../Assets/resume.pdf';
 
 export default class About extends React.Component {
   render() {
@@ -14,18 +15,16 @@ export default class About extends React.Component {
             <div className="wrapper">
               <div className="content">
                 <p>
-                  Computer Science is my background, Software Engineering is my process, Creating is my <span className="highlight">passion.</span>
+                  Computer Science is my background, Software Engineering is my process, Creating is my passion.
                 </p>
                 <p>
                   I'm a believer of creative expression and thoughtful design in order to build a better, more accessible, personal, and most importantly, fun user experience.
                 </p>
                 <p>
-                  I love <span className="highlight">JavaScript</span> and
-                  everything web related because of the platform's <span className="highlight">openness</span>, <span className="highlight">interactive</span> affordances, and ability to reach and connect with <span className="highlight">broad audiences.</span> I'm particularly interested in the intersection between web development, human-computer interaction, and multimedia.
+                  I love JavaScript and everything web related because of the platform's openness, interactive affordances, and ability to reach and connect with broad audiences. I'm particularly interested in the intersection between web development, human-computer interaction, and multimedia.
                 </p>
                 <p>
-                  When my dev senses kick-in I build presumably{' '}
-                  <span className="highlight"> awesome stuff</span>. I stay close to
+                  When my dev senses kick-in I build presumably awesome stuff. I stay close to
                   the community and try to keep tabs with the pace at which the web is evolving.
                 </p>
                 <p>
@@ -37,7 +36,7 @@ export default class About extends React.Component {
                 </p>
                 <p>
                   <a style={{ marginRight: '.25em' }} href='mailto:c.gomez3644@gmail.com'>Contact</a>
-                  <a style={{ marginLeft: '.25em' }} href='mailto:c.gomez3644@gmail.com'>Resume</a>
+                  <a target='_blank' rel='noopener noreferrer' style={{ marginLeft: '.25em' }} href={resume}>Resume</a>
                 </p>
               </div>
             </div>
@@ -70,13 +69,13 @@ export default class About extends React.Component {
             <div className="wrapper">
               <div className="content">
                 <p>
-                  Born and raised in Los Angeles, a California boy through and through.                  
-                </p>
-                <p>
-                  I recently graduated from California State University Northridge with a B.S. in Computer Science, I even earned an A.S. in Mathematics along the way!
+                  Born and raised in Los Angeles, I recently graduated from California State University Northridge with a B.S. in Computer Science, I even earned an A.S. in Mathematics along the way!
                 </p>
                 <p>
                   I started programming in my early teens, learning HTML, CSS, and JavaScript in an effort to create games. This effort most likely stemmed from my innate desire to build and design things. A builder at heart, my favorite toys growing up were Legos, one of my favorite games was Minecraft, and I took 3 years of architecture classes in highschool  before these interests led me into the wonderful world of Computer Science.
+                </p>
+                <p>
+                   Simultaneously shrinking the world and expanding all of our personal worlds, I believe the internet is one of the most important human inventions. With most of our time spent on the intenet, I enjoy making that time spent a more pleasant and interesting place. And fascinated by Human-Computer Interaction, it's no surprise I'm drawn to the web. Not only does the internet allow for me to put my work in a place everyone in the world can access it freely and easily, but it's also constantly evolving with the pace of technology, allowing for more immersive, interactive human-computer experiences.
                 </p>
                 <p>
                   When I'm not programming or tutoring Computer Science, my two dogs take most of my time, but I also enjoy running cross country trails, traveling the world, going to the movies (MoviePass era, I miss you!), watching the NBA, reading about history, current events, and politics, and discovering new bands at my favorite LA hotspots. 

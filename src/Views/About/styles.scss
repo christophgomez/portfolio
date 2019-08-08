@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   background-clip: var(--bg-color);
+  z-index: 2;
   h1 {
     padding: 1rem 0;
     font-size: 3rem;
@@ -15,10 +16,6 @@
   }
   a:hover {
     border-bottom: 1px solid var(--text-color);
-  }
-  .highlight,
-  ::selection {
-    background-color: var(--highlight-color);
   }
   .text-emoji {
     padding: 2rem 0;
@@ -35,7 +32,6 @@
       color: var(--text-color);
     }
     margin: 0 auto;
-    width: calc(100%);
   }
   .wrapper .content {
     font-size: 0.875rem;

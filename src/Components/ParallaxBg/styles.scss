@@ -35,7 +35,8 @@ $shadows-big: multiple-box-shadow(100);
 
 .parallax {
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  color: var(--text-color);
   
   #stars1 {
     width: 1px;

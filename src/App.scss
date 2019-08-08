@@ -1,11 +1,16 @@
 :root {
-  --text-color: rgb(255, 65, 54);
+  --text-color: #ff4136;
   --bg-color: #fff;
-  --highlight-color: rgba(255, 230, 230, 0.856);
+  --alt-bg: #ff4136;
+  --alt-text: #fff;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .App {
   color: var(--text-color);
+  background: var(--bg-color);
+  font-family: 'Raleway', sans-serif;
 }
 
 .row {

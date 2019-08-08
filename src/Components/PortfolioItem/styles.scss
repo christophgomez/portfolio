@@ -24,7 +24,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: height .5s;
   }
   .portfolio-item__desc {
     display: flex;
@@ -65,12 +64,12 @@
       }
     }
   }
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--alt-bg);
+  color: var(--alt-text);
   a {
-    color: var(--bg-color);
+    color: var(--alt-text);
   }
   .portfolio-item__links a:hover {
-    border-bottom: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--alt-text);
   }
 }
