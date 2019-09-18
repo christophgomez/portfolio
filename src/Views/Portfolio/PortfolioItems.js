@@ -7,8 +7,25 @@ import city from '../../Assets/images/city-def.png';
 import smart from '../../Assets/images/smartdj.png';
 import jupyter from '../../Assets/images/jupyter.png';
 import tree from '../../Assets/images/orb.PNG';
+import engine from '../../Assets/images/engine.png';
 
 const items = [
+  {
+    img: engine,
+    title: '3D Tilemap Engine',
+    description: 'A Three.js powered, JavaScript, 3D tilemap engine for Node.js or the browser. Currently in development. Checkout the GitHub or the showcase sandbox for periodic updates.',
+    icons: [{ type: 'font-awesome', icon: faNode }, { type: 'font-awesome', icon: faReact }],
+    links: [
+      {
+        title: 'Website',
+        href: 'https://christophgomez.github.io/threejs-tilemap/',
+      },
+      {
+        title: 'Github',
+        href: 'https://github.com/christophgomez/threejs-tilemap'
+      }
+    ]
+  },
   {
     img: syn,
     title: 'Synesthesiafy',
